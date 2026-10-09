@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday, Ebrahim Moton!</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,500&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Amiri&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="gate"><div class="frame">
+  <div class="moon">☪</div><div class="orn">❖</div>
+  <h2>A surprise awaits<br><b id="gName" style="font-style:normal">Ebrahim Moton</b></h2>
+  <p style="margin:6px 0 16px">Prepared with love by family, friends &amp; a fan.</p>
+  <button class="btn" id="open">Open the invitation</button>
+</div></div>
+
+<canvas id="fx"></canvas>
+
+<!-- PAGE 1: MENU -->
+<section class="page hero" id="p-menu">
+  <div class="kicker">Celebrating a legend</div>
+  <h1><em>Happy Birthday</em><span id="name">Ebrahim Moton</span></h1>
+  <div class="orn">❖ ✦ ❖</div>
+  <div class="seal"><small>LEVEL UP</small><b id="age">+1</b><small>UNLOCKED</small></div>
+  <p class="salam">🎂🤍 Happy Birthday, Legend! 🦸🏻‍♂️🎮<br>Barakallahu fee umrik</p>
+  <div id="cd" class="card"></div>
+  <div class="pills"><span>YouTube · Ebrahim Moton</span><span>TikTok · Ebrahim Moton</span></div>
+  <div class="orn" style="margin-top:26px">The Programme</div>
+  <div class="doors">
+    <div class="card door" data-go="wishes"><div class="no">I</div><h3>Birthday Wishes</h3><p>Letters from Mother, Father &amp; eight friends</p></div>
+    <div class="card door" data-go="missions"><div class="no">II</div><h3>Missions</h3><p>Real-life activities &amp; live-stream fan missions</p></div>
+    <div class="card door" data-go="dua"><div class="no">III</div><h3>The Final Dua</h3><p>A prayer and a certificate for the legend</p></div>
+  </div>
+</section>
+
+<!-- PAGE 2: WISHES -->
+<section class="page" id="p-wishes">
+  <h2 class="title">Birthday Wishes</h2><div class="orn">❖</div>
+  <p class="sub">Tap each sealed letter to read it</p>
+  <div class="sect">From his parents</div>
+  <div class="friends" id="parents"></div>
+  <div class="sect">From his friends</div>
+  <div class="friends" id="friends"></div>
+  <div class="row"><button class="btn line" id="openAll">Open all letters</button></div>
+  <div class="row nav2"></div>
+</section>
+
+<!-- PAGE 3: MISSIONS -->
+<section class="page" id="p-missions">
+  <h2 class="title">Birthday Missions</h2><div class="orn">❖</div>
+  <p class="sub">For the streamer, his family and his community</p>
+  <div class="grid2">
+    <div class="card" data-list="real"><h3>🏡 Real-life activities</h3><div class="list"></div><div class="bar"><div></div></div><div class="cnt"></div></div>
+    <div class="card" data-list="live"><h3>📺 Fan missions on live</h3><div class="list"></div><div class="bar"><div></div></div><div class="cnt"></div>
+      <div class="chat" id="chatMsg">Happy Birthday Ebrahim! 🎂 Barakallahu fee umrik, legend! 🦸🏻‍♂️</div>
+      <button class="btn" id="copy" style="padding:9px 18px;font-size:13px">Copy chat message</button></div>
+  </div>
+  <div class="row nav2"></div>
+</section>
+
+<!-- PAGE 4: DUA -->
+<section class="page" id="p-dua">
+  <h2 class="title">The Final Dua</h2><div class="orn">❖</div>
+  <p class="sub">Say Ameen after each one 🤲🏻</p>
+  <div class="card dua"><h3>For a blessed life</h3>
+    <div class="ar">بَارَكَ اللَّهُ فِي عُمْرِكَ</div>
+    <p>May Allah bless your life.</p><div class="ref">BARAKALLAHU FEE UMRIK</div></div>
+  <div class="card dua"><h3>For knowledge and growth</h3>
+    <div class="ar">رَبِّ زِدْنِي عِلْمًا</div>
+    <p>“My Lord, increase me in knowledge.”</p><div class="ref">QUR'AN 20:114</div></div>
+  <div class="card dua"><h3>For the best of both worlds</h3>
+    <div class="ar">رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ</div>
+    <p>“Our Lord, give us good in this world and good in the Hereafter, and protect us from the punishment of the Fire.”</p><div class="ref">QUR'AN 2:201</div></div>
+  <div class="row"><button class="btn" id="ameen">Ameen 🤲🏻 <span id="amc"></span></button></div>
+  <div class="cert">
+    <div class="kicker">Official Certificate</div>
+    <h2>Award of Legend</h2><div class="orn">❖ ✦ ❖</div>
+    <p>Proudly presented to</p>
+    <div class="who" id="cName">Ebrahim Moton</div>
+    <p>creator, collector, movie lover &amp; streamer,<br>for being a source of joy to family, friends and fans.</p>
+    <p style="color:var(--muted);font-style:italic">Birthday · 16 October <span id="yr"></span></p>
+    <p style="color:var(--wine)">InshaAllah, greater things are coming your way ✨</p>
+  </div>
+  <div class="row nav2"></div>
+</section>
+
+<nav id="nav">
+  <button data-go="menu"><span>❖</span>Menu</button>
+  <button data-go="wishes"><span>💌</span>Wishes</button>
+  <button data-go="missions"><span>🎯</span>Missions</button>
+  <button data-go="dua"><span>🤲🏻</span>Dua</button>
+</nav>
+
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
